@@ -1,5 +1,12 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Fastboot Shoebox Test</h1>
+
+<ul>
+  {{#each-in model as |asset fingerprintedAsset|}}
+    <li>{{asset}}: {{fingerprintedAsset}}</li>
+  {{else}}
+    <li>no results</li>
+  {{/each-in}}
+</ul>
+
 
 {{outlet}}
